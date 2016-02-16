@@ -1,0 +1,68 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  background: url('../images/geometry.png') repeat fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.form{
+  width: 40%;
+  margin: 5em auto 0 auto;
+  box-sizing: border-box;
+  padding: 1em;
+}
+.input-wrap:first-child{
+  margin-bottom: 2rem;
+}
+.input-wrap .input-label{
+  color: #696969;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: block;
+  position: relative;
+  top: -31px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.input-wrap input[type="text"]{
+  display: block;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px #666;
+  width: 100%;
+  outline: none;
+  font-size: 1.3em;
+  color: #494949;
+  padding: .5rem;
+  position: relative;
+  z-index: 2;
+}
+.input-wrap input[type="text"]:focus + .input-label,
+.filled + .input-label
+{
+  color: #898989;
+  -webkit-transform: translate3d(-3.25em, -1.25em, 0) scale3d(0.75, 0.75, 1);
+	transform: translate3d(-3.25em, -1.25em, 0) scale3d(0.75, 0.75, 1);
+}
+
+.ui-helper-hidden-accessible{
+  display: none;
+}
+.ui-autocomplete{
+  width: 100%;
+  padding: 0px .5rem;
+  max-width: 39%;
+  box-sizing: border-box;
+  background-color: white;
+}
+.ui-autocomplete li{
+  list-style: none;
+  font-family: inherit;
+  padding: .5rem;
+  cursor: pointer;
+  font-size: .9rem;
+}
+.ui-autocomplete .ui-state-focus{
+  background-color: #DDD;
+}
